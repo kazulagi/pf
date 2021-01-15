@@ -1,0 +1,73 @@
+### plantFEM standard library (std)
+
+In this section, we will use plantFEM for basic programming before we get into plant and soil simulations. First, let's write a Hello world program, a program that outputs text.
+
+
+[![Hello, world!](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XahUY6xCN0Jj045HMmL8teuMAdj-hmjZ?usp=sharing)
+
+
+```Fortran
+
+! Activate the plantfem library.
+use plantfem
+
+! Disables implicit type declarations
+implicit none
+
+! Print "Hello, world" to the terminal
+call print("Hello, world")
+
+! End the program.
+end
+
+```
+
+Next, let's output "hello hello hello hello hello". If we do the same thing as before, we can create a program that looks like this
+
+
+```Fortran
+
+! Activate the plantfem library.
+use plantfem
+
+! Disables implicit type declarations
+implicit none
+
+! Print "Hello, world" to the terminal
+call print("helo hello hello hello hello")
+
+! End the program.
+end
+
+```
+
+In plantFEM, the string_ type can be used to process strings. If we write this example using the string_type, it will look like this.
+
+
+
+[![Hello, world!](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1CTappBDBAVMNzjN1CX-Tj8DKzZ8OZbix?usp=sharing)
+
+```
+use plantfem
+implicit none
+
+! Create a string-type variable named "word".
+type(String_) :: word
+
+word = "hello "
+
+! Add "hello " in the end of the word.
+word = word + "hello "
+
+word = word + "hello "
+
+word = word + "hello "
+
+word = word + "hello "
+
+call print(word)
+
+end
+```
+
+

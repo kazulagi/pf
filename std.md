@@ -1,7 +1,8 @@
-### plantFEM standard library (std)
+## plantFEM standard library (std)
 
 In this section, we will use plantFEM for basic programming before we get into plant and soil simulations. First, let's write a Hello world program, a program that outputs text.
 
+### String, Do-Loop, and If-statement
 
 [![Hello, world!](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XahUY6xCN0Jj045HMmL8teuMAdj-hmjZ?usp=sharing)
 
@@ -170,5 +171,51 @@ call print(word)
 
 end
 
+```
+
+Someone might be mean enough to specify a very large number of repetitions. To avoid this problem, set a maximum number of repetitions, and if the number of repetitions is less than or equal to the maximum number of repetitions, repeat the program, otherwise stop repeating it.
+
+- program:
+
+```fortran
+
+use plantfem
+implicit none
+
+type(String_) :: word
+integer(int32) :: i, times
+
+call print("How many times are you want to repeat?")
+read *, times
+
+word = ""
+
+do i=1, times
+    if( i <= 100)then
+        word = word + "hello "
+        cycle
+    else
+        call print("The hello is limited to 10 times.")
+        exit
+    endif
+enddo
+
+call print(word)
+
+end
 
 ```
+
+- output:
+
+```shell 
+How many times are you want to repeat?
+100
+The hello is limited to 10 times.
+hello hello hello hello hello hello hello hello hello hello
+```
+Now you can perform string manipulation, iteration, and conditional branching.
+
+
+
+### Array, Equations, and File-IO

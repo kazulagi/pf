@@ -71,3 +71,30 @@ end
 ```
 
 
+Here, the string "hello" is followed by one "hello" after another. Since this is a repetitive task, it can be written more simply by using a do loop.
+
+```Fortran
+
+use plantfem
+implicit none
+
+! Create a string-type variable named "word"
+type(String_) :: word
+
+! This "i"  is defined as a 32-bit integer variable. 
+integer(int32) :: i
+
+! Input "hello " into the variable "word"
+word = "hello "
+
+! Repeat four times, where i is changes from 1 to 4
+do i=1, 4
+    word = word + "hello "
+enddo
+
+call print(word)
+
+end
+
+```
+

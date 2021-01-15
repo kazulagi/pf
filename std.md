@@ -5,6 +5,7 @@ In this section, we will use plantFEM for basic programming before we get into p
 
 [![Hello, world!](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XahUY6xCN0Jj045HMmL8teuMAdj-hmjZ?usp=sharing)
 
+- program:
 
 ```fortran
 
@@ -32,6 +33,8 @@ Hello, world
 
 Next, let's output "hello hello hello hello hello". If we do the same thing as before, we can create a program that looks like this
 
+
+- program:
 
 ```fortran
 
@@ -63,6 +66,9 @@ In plantFEM, the string_ type can be used to process strings. If we write this e
 
 
 [![Hello, world!](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1CTappBDBAVMNzjN1CX-Tj8DKzZ8OZbix?usp=sharing)
+
+
+- program:
 
 ```fortran
 use plantfem
@@ -98,6 +104,9 @@ helo hello hello hello hello
 
 Here, the string "hello" is followed by one "hello" after another. Since this is a repetitive task, it can be written more simply by using a do loop.
 
+
+- program:
+
 ```fortran
 
 use plantfem
@@ -131,3 +140,35 @@ helo hello hello hello hello
 
 ```
 
+Now, let's make it so that it asks you at runtime how many times to repeat the next time.
+
+- program:
+
+```fortran
+
+use plantfem
+implicit none
+
+type(String_) :: word
+integer(int32) :: i, times
+
+! Output "How many times are you want to repeat?" to the terminal.
+call print("How many times are you want to repeat?")
+
+! Read how many times to repeat.
+read *, times
+
+! Initialize a string
+word = ""
+
+! Attach hello as many times as stored in times.
+do i=1, times
+    word = word + "hello "
+enddo
+
+call print(word)
+
+end
+
+
+```

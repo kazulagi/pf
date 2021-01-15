@@ -22,6 +22,14 @@ end
 
 ```
 
+- output:
+
+```shell
+
+Hello, world
+
+```
+
 Next, let's output "hello hello hello hello hello". If we do the same thing as before, we can create a program that looks like this
 
 
@@ -38,6 +46,15 @@ call print("helo hello hello hello hello")
 
 ! End the program.
 end
+
+```
+
+
+- output:
+
+```shell
+
+helo hello hello hello hello
 
 ```
 
@@ -70,6 +87,14 @@ call print(word)
 end
 ```
 
+- output:
+
+```shell
+
+helo hello hello hello hello
+
+```
+
 
 Here, the string "hello" is followed by one "hello" after another. Since this is a repetitive task, it can be written more simply by using a do loop.
 
@@ -95,6 +120,14 @@ enddo
 call print(word)
 
 end
+
+```
+
+- output:
+
+```shell
+
+helo hello hello hello hello
 
 ```
 

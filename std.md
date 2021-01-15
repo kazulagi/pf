@@ -6,7 +6,7 @@ In this section, we will use plantFEM for basic programming before we get into p
 [![Hello, world!](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XahUY6xCN0Jj045HMmL8teuMAdj-hmjZ?usp=sharing)
 
 
-```Fortran
+```fortran
 
 ! Activate the plantfem library.
 use plantfem
@@ -25,7 +25,7 @@ end
 Next, let's output "hello hello hello hello hello". If we do the same thing as before, we can create a program that looks like this
 
 
-```Fortran
+```fortran
 
 ! Activate the plantfem library.
 use plantfem
@@ -47,7 +47,7 @@ In plantFEM, the string_ type can be used to process strings. If we write this e
 
 [![Hello, world!](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1CTappBDBAVMNzjN1CX-Tj8DKzZ8OZbix?usp=sharing)
 
-```
+```fortran
 use plantfem
 implicit none
 
@@ -73,7 +73,7 @@ end
 
 Here, the string "hello" is followed by one "hello" after another. Since this is a repetitive task, it can be written more simply by using a do loop.
 
-```Fortran
+```fortran
 
 use plantfem
 implicit none

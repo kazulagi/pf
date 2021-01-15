@@ -9,7 +9,7 @@ In this section, we will use plantFEM for basic programming before we get into p
 
 - program:
 
-```fortran:server.f90
+```fortran
 
 ! Activate the plantfem library.
 use plantfem
@@ -38,7 +38,7 @@ Next, let's output "hello hello hello hello hello". If we do the same thing as b
 
 - program:
 
-```fortran:server.f90
+```fortran
 
 ! Activate the plantfem library.
 use plantfem
@@ -72,7 +72,7 @@ In plantFEM, the string_ type can be used to process strings. If we write this e
 
 - program:
 
-```fortran:server.f90
+```fortran
 use plantfem
 implicit none
 
@@ -109,7 +109,7 @@ Here, the string "hello" is followed by one "hello" after another. Since this is
 
 - program:
 
-```fortran:server.f90
+```fortran
 
 use plantfem
 implicit none
@@ -146,7 +146,7 @@ Now, let's make it so that it asks you at runtime how many times to repeat the n
 
 - program:
 
-```fortran:server.f90
+```fortran
 
 use plantfem
 implicit none
@@ -178,7 +178,7 @@ Someone might be mean enough to specify a very large number of repetitions. To a
 
 - program:
 
-```fortran:server.f90
+```fortran
 
 use plantfem
 implicit none

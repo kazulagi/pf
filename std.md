@@ -192,7 +192,7 @@ read *, times
 word = ""
 
 do i=1, times
-    if( i <= 100)then
+    if( i <= 10)then
         word = word + "hello "
         cycle
     else
